@@ -343,6 +343,9 @@ NSString *GTMApplicationIdentifier(NSBundle *bundle);
 @protocol GTMHTTPFetcherServiceProtocol <NSObject>
 // This protocol allows us to call into the service without requiring
 // GTMHTTPFetcherService sources in this project
+
+@property (retain) NSOperationQueue *delegateQueue;
+
 - (BOOL)fetcherShouldBeginFetching:(GTMHTTPFetcher *)fetcher;
 - (void)fetcherDidStop:(GTMHTTPFetcher *)fetcher;
 
