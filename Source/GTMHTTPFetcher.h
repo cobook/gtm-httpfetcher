@@ -251,16 +251,17 @@
 // notifications
 //
 // fetch started and stopped, and fetch retry delay started and stopped
-_EXTERN NSString* const kGTMHTTPFetcherStartedNotification           _INITIALIZE_AS(@"kGTMHTTPFetcherStartedNotification");
-_EXTERN NSString* const kGTMHTTPFetcherStoppedNotification           _INITIALIZE_AS(@"kGTMHTTPFetcherStoppedNotification");
-_EXTERN NSString* const kGTMHTTPFetcherRetryDelayStartedNotification _INITIALIZE_AS(@"kGTMHTTPFetcherRetryDelayStartedNotification");
-_EXTERN NSString* const kGTMHTTPFetcherRetryDelayStoppedNotification _INITIALIZE_AS(@"kGTMHTTPFetcherRetryDelayStoppedNotification");
+
+extern NSString* const kGTMHTTPFetcherStartedNotification;
+extern NSString* const kGTMHTTPFetcherStoppedNotification;
+extern NSString* const kGTMHTTPFetcherRetryDelayStartedNotification;
+extern NSString* const kGTMHTTPFetcherRetryDelayStoppedNotification;
 
 // callback constants
-_EXTERN NSString* const kGTMHTTPFetcherErrorDomain       _INITIALIZE_AS(@"com.google.GTMHTTPFetcher");
-_EXTERN NSString* const kGTMHTTPFetcherStatusDomain      _INITIALIZE_AS(@"com.google.HTTPStatus");
-_EXTERN NSString* const kGTMHTTPFetcherErrorChallengeKey _INITIALIZE_AS(@"challenge");
-_EXTERN NSString* const kGTMHTTPFetcherStatusDataKey     _INITIALIZE_AS(@"data");  // data returned with a kGTMHTTPFetcherStatusDomain error
+extern NSString* const kGTMHTTPFetcherErrorDomain;
+extern NSString* const kGTMHTTPFetcherStatusDomain;
+extern NSString* const kGTMHTTPFetcherErrorChallengeKey;
+extern NSString* const kGTMHTTPFetcherStatusDataKey;  // data returned with a kGTMHTTPFetcherStatusDomain error
 
 enum {
   kGTMHTTPFetcherErrorDownloadFailed = -1,

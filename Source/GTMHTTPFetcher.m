@@ -34,6 +34,17 @@ const NSTimeInterval kUnsetMaxRetryInterval = -1;
 const NSTimeInterval kDefaultMaxDownloadRetryInterval = 60.0;
 const NSTimeInterval kDefaultMaxUploadRetryInterval = 60.0 * 10.;
 
+NSString* const kGTMHTTPFetcherStartedNotification = @"kGTMHTTPFetcherStartedNotification";
+NSString* const kGTMHTTPFetcherStoppedNotification = @"kGTMHTTPFetcherStoppedNotification";
+NSString* const kGTMHTTPFetcherRetryDelayStartedNotification = @"kGTMHTTPFetcherRetryDelayStartedNotification";
+NSString* const kGTMHTTPFetcherRetryDelayStoppedNotification = @"kGTMHTTPFetcherRetryDelayStoppedNotification";
+
+// callback constants
+NSString* const kGTMHTTPFetcherErrorDomain = @"com.google.GTMHTTPFetcher";
+NSString* const kGTMHTTPFetcherStatusDomain = @"com.google.HTTPStatus";
+NSString* const kGTMHTTPFetcherErrorChallengeKey = @"challenge";
+NSString* const kGTMHTTPFetcherStatusDataKey = @"data";
+
 //
 // GTMHTTPFetcher
 //
