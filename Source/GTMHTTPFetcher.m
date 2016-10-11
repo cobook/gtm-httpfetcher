@@ -164,12 +164,12 @@ NSString* const kGTMHTTPFetcherStatusDataKey = @"data";
           [self class], self, [self.mutableRequest URL]];
 }
 
-#if !GTM_IPHONE
-- (void)finalize {
-  [self stopFetchReleasingCallbacks:YES]; // releases connection_, destroys timers
-  [super finalize];
-}
-#endif
+//#if !GTM_IPHONE
+//- (void)finalize {
+//  [self stopFetchReleasingCallbacks:YES]; // releases connection_, destroys timers
+//  [super finalize];
+//}
+//#endif
 
 - (void)dealloc {
 #if DEBUG
