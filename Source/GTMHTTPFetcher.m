@@ -349,9 +349,12 @@ NSString* const kGTMHTTPFetcherStatusDataKey = @"data";
   } else {
 
     // schedule on current run loop in the specified modes
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     connection_ = [[connectionClass alloc] initWithRequest:request_
                                                   delegate:self
                                           startImmediately:NO];
+#pragma clang diagnostic pop
     for (NSString *mode in runLoopModes) {
       [connection_ scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:mode];
     }
